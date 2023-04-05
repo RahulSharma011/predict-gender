@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+      />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div
+      class="h-screen bg-gradient-to-r from-cyan-500 to-blue-500 flex
+      justify-center items-center">
+      <div class="w-80 px-4 py-3 bg-white rounded-lg">
+        <h2 class="uppercase text-center text-3xl my-4 font-semibold">
+          Predict gender by name
+        </h2>
+        <p id="error" class="text-red-600 hidden"></p>
+        <input
+          class="border border-black rounded-lg h-8 px-1.5 my-4 text-1xl"
+          type="text"
+          placeholder="Enter Your Name"
+          id="name"
+          />
+        <button
+          id="submit"
+          class="bg-purple-600 py-1.5 px-3 rounded-md text-white text-sm
+          hover:bg-blue-500">
+          Predict
+        </button>
+        <div
+          id="container"
+          class="w-full bg-blue-700 flex items-center flex-col rounded-lg">
+          <p
+            id="dataName"
+            class="text-white uppercase text-2xl my-3 font-semibold">
+            Name
+          </p>
+          <img
+            id="image"
+            src="img/pngwing.com(1).png"
+            class="w-12 h-12 bg-white rounded-full bg-center"
+            />
+          <p
+            id="dataGender"
+            class="text-white uppercase text-lg my-3 font-semibold">
+            Gender
+          </p>
+          <p id="wrapper" class="text-white uppercase text-lg my-2">Male</p>
+
+          <p class="text-white mb-4">
+            Probability:<span id="probability"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
